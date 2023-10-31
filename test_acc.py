@@ -16,7 +16,7 @@ from models.model import build_ActorCritic
 from scorer.model_swin import build_Scorer
 from envs_zoo.place_env import Environment
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
 
 def get_args_parser():
