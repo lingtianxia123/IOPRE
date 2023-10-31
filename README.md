@@ -59,15 +59,15 @@ Generate composite image:
 ### Evaluation
 To evaluate accuracy via the classifier, please 1) download the faster-rcnn model pretrained on visual genome from [google drive](https://drive.google.com/file/d/18n_3V1rywgeADZ3oONO0DsuuS9eMW6sN/view) (provided by [Faster-RCNN-VG](https://github.com/shilrley6/Faster-R-CNN-with-model-pretrained-on-Visual-Genome)) to ```faster-rcnn/models/faster_rcnn_res101_vg.pth```, 2) download the pretrained binary classifier model from [bcmi cloud](https://cloud.bcmi.sjtu.edu.cn/sharing/XPEgkSHdQ) or [baidu disk](https://pan.baidu.com/s/1skFRfLyczzXUpp-6tMHArA) (code: 0qty) to ```BINARY_CLASSIFIER_PATH```, and 3) run:
   ```
-  python test_acc.py
+  sh script/eval_acc.sh model_sign_pos_20230121_114142-best 14 ./eval/best-acc.pth test_pos_single
   ```
 To evaluate FID score, run:
   ```
-  python test_acc.py
+  sh script/eval_fid.sh model_sign_pos_20230121_114142-best 14 /media/lingtianxia/Data/Dataset/ObjectPlacement/OPA/com_pic_testpos299 test_pos_single
   ```
 To evaluate LPIPS score, run:
   ```
-  python test_acc.py
+  sh script/eval_lpips.sh model_sign_pos_20230121_114142-best 14 test_pos_only
   ```
 ### Citation
 
