@@ -49,7 +49,7 @@ Interactive Object Placement with Reinforcement Learning
 
 ### Inference
 
-Download weight from [baidu disk](https://pan.baidu.com/s/1ugyUzt1e3aaQCamRotXQLA) (code: y1cw) and place it in the 'result' folder :
+Download weight from [baidu disk](https://pan.baidu.com/s/1ugyUzt1e3aaQCamRotXQLA) (code: y1cw) and place it in the 'result' folder.
 
 Generate composite image:
   ```
@@ -59,15 +59,15 @@ Generate composite image:
 ### Evaluation
 To evaluate accuracy via the classifier, please 1) download the faster-rcnn model pretrained on visual genome from [google drive](https://drive.google.com/file/d/18n_3V1rywgeADZ3oONO0DsuuS9eMW6sN/view) (provided by [Faster-RCNN-VG](https://github.com/shilrley6/Faster-R-CNN-with-model-pretrained-on-Visual-Genome)) to ```faster-rcnn/models/faster_rcnn_res101_vg.pth```, 2) download the pretrained binary classifier model from [bcmi cloud](https://cloud.bcmi.sjtu.edu.cn/sharing/XPEgkSHdQ) or [baidu disk](https://pan.baidu.com/s/1skFRfLyczzXUpp-6tMHArA) (code: 0qty) to ```BINARY_CLASSIFIER_PATH```, and 3) run:
   ```
-  sh script/eval_acc.sh model 14 ./eval/best-acc.pth test_pos_single
+  sh script/eval_acc.sh model XX ./eval/best-acc.pth test_pos_single
   ```
 To evaluate FID score, run:
   ```
-  sh script/eval_fid.sh model 14 XXX/OPA/com_pic_testpos299 test_pos_single
+  sh script/eval_fid.sh model XX XXX/OPA/com_pic_testpos299 test_pos_single
   ```
 To evaluate LPIPS score, run:
   ```
-  sh script/eval_lpips.sh model 14 test_pos_only
+  sh script/eval_lpips.sh model XX test_pos_only
   ```
 ### Citation
 
@@ -78,8 +78,7 @@ To evaluate LPIPS score, run:
   title={Interactive Object Placement with Reinforcement Learning},
   author={Zhang, Shengping and Meng, Quanling and Liu, Qinglin and Nie, Liqiang and Zhong, Bineng and Fan, Xiaopeng and Ji, Rongrong},
   booktitle={Proceedings of the 40th International Conference on Machine Learning},
+  volume={202}
   pages={41510--41522},
   year={2023},
-  volume={202}
-}
-    ```
+}    ```
